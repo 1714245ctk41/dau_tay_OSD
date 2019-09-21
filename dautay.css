@@ -29,6 +29,68 @@
   -moz-box-sizing:border-box;
 }
 
+.header-main ul.navbar-nav.mr-auto.ml-auto li {
+    margin-left: 20px;
+}
+
+.header-main ul.navbar-nav.mr-auto.ml-auto li.active a {
+    color: #91ad41;
+}
+
+.header-main ul.navbar-nav.mr-auto.ml-auto li:hover a {
+    color: #91ad41;
+}
+
+.header-main ul.navbar-nav.mr-auto.ml-auto li a {
+    color: #27272f;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in;
+}
+
+.header-main div#navbarSupportedContent {
+    transition: all 0.5s linear;
+}
+
+.header-main button.navbar-toggler {
+    width: 24px;
+    position: relative;
+    height: 20px;
+    padding: 0px;
+}
+.header-main button.navbar-toggler:focus{
+    outline:none;
+}
+.header-main button.navbar-toggler[aria-expanded="true"] .header-main-button-collapse {
+    top:8px;
+   
+}
+
+span.header-main-button-collapse {
+    left: 0;
+    position: absolute;
+    display: inline-block;
+    width: 22px;
+    height: 1px;
+    border: 1px solid #111111;
+    transition:all 0.5s linear;
+}
+
+span.header-main-button-collapse:nth-child(1) {
+    top: 0px;
+}
+
+span.header-main-button-collapse:nth-child(2) {
+    top: 7px;
+}
+
+span.header-main-button-collapse:nth-child(3) {
+}
+
+span.header-main-button-collapse:nth-child(3) {
+    top: 14px;
+}
+
 .obn-slide-wrap .carousel-inner .row {
     width: 107%;
 }
