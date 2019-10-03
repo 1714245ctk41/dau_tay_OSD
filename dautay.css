@@ -1974,3 +1974,8 @@ position: absolute;background: black;width: 100%;height: 100%;left: 0;top: 0;opa
 }
 
 }
+@media screen and (max-width:992px){
+    .header-head{
+        background:transparent !important;
+    }
+}
