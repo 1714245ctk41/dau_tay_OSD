@@ -29,6 +29,8 @@
   -moz-box-sizing:border-box;
 }
 
+a.navbar-brand {padding-left: 48px;}
+
 .collapse.show {
 }
 
@@ -123,7 +125,7 @@ header-main button.navbar-toggler[aria-expanded="true"] .black-cover-adder {
     width: 120%;
 }
 
-.header-main ul.navbar-nav.mr-auto.ml-auto li {
+.header-main ul.navbar-nav.mr-auto.ml-auto li:not(:nth-child(1)) {
     margin-left: 20px;
 }
 
