@@ -3111,15 +3111,17 @@ input[type="button"].btn-block {
 }
 
 .collapse.show {
-  display: block;
+  width:280px;
+  transition:all 0.2s linear;
+  animation:slideInLeft 0.2s ;
 }
 
 tr.collapse.show {
-  display: table-row;
+  display: table-row;animation:slideInLeft 0.2s ;
 }
 
 tbody.collapse.show {
-  display: table-row-group;
+  display: table-row-group;animation:slideInLeft 0.2s ;
 }
 
 .collapsing {
