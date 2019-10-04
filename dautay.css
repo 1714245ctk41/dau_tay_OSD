@@ -1314,17 +1314,19 @@ span.figure-cover svg {
     margin-left: -10px !important;
     margin-right: 10px !important;
     color: #99b350;
+    transform: rotate(90deg);
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
 }
 
 .fh-content-body h2.mb-0 button:focus {
     text-decoration: none;
 }
 
-.fh-content-body h2.mb-0 button:focus svg,
-.fh-content-body h2.mb-0 button[aria-expanded='true'] svg
+.btn.btn-link.collapsed svg
 {
     transform: rotate(90deg);
-    -webkit-transform:rotate(90deg);
+    -webkit-transform: rotate(0deg);
 }
 
 .fh-content-body h2.mb-0 button:hover {
