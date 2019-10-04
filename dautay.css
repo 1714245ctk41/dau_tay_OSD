@@ -157,17 +157,14 @@ header-main button.navbar-toggler[aria-expanded="true"] .black-cover-adder {
 .header-main button.navbar-toggler:focus{
     outline:none;
 }
-.header-main button.navbar-toggler[aria-expanded="true"] .header-main-button-collapse {
-    top:8px;
-
-}
+.header-main button.navbar-toggler[aria-expanded="true"] .header-main-button-collapse {top: 18px;}
 .header-main button.navbar-toggler[aria-expanded="true"]+button.navbar-toggler-close{
         display:block;
     }
 
 
 span.header-main-button-collapse {
-    left: 0;
+    left: 9px;
     position: absolute;
     display: inline-block;
     width: 22px;
@@ -178,18 +175,18 @@ span.header-main-button-collapse {
 }
 
 span.header-main-button-collapse:nth-child(1) {
-    top: 0px;
+    top: 12px;
 }
 
 span.header-main-button-collapse:nth-child(2) {
-    top: 7px;
+    top: 19px;
 }
 
 span.header-main-button-collapse:nth-child(3) {
 }
 
 span.header-main-button-collapse:nth-child(3) {
-    top: 14px;
+    top: 26px;
 }
 
 .obn-slide-wrap .carousel-inner .row {
@@ -1437,7 +1434,7 @@ body{
   overflow-x: hidden;
   font-size: 14px;
 }
-/* overflow-x trong thẻ html để chạy trên trình duyệt điện thoại */
+/* overflow-x trong tháº» html Ä‘á»ƒ cháº¡y trÃªn trÃ¬nh duyá»‡t Ä‘iá»‡n thoáº¡i */
 html{
     overflow-x:hidden;
 }
@@ -2088,8 +2085,10 @@ position: absolute;background: black;width: 100%;height: 100%;left: 0;top: 0;opa
         margin-top:16px;
         position:absolute;
         left:0;
-        top: 18px;
+        top: 4px;
         margin-left: 37px;
+        padding: 20px;
+        text-align: center;
     }
     .header-main ul.navbar-nav.mr-auto.ml-auto li a{
         color: #111111;
