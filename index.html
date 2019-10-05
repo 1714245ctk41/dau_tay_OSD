@@ -246,14 +246,21 @@
           </div>
 
 
-          <a class="prev controls-move " href="#carouselExampleControls" role="button" data-slide="prev" onclick="plusSlides(-1)">
+          <a class="prev controls-move" id="controls-move"  href="#carouselExampleControls" role="button" data-slide="prev" onclick="plusSlides(-1)">
             <span class="" aria-hidden="true">&larr;</span>
             <span class="sr-only">Previous</span>
           </a>
-          <a class="next controls-move " href="#carouselExampleControls" role="button" data-slide="next" onclick="plusSlides(1)">
+          <a class="next controls-move" id="controls-move"  href="#carouselExampleControls" role="button" data-slide="next" onclick="plusSlides(1)">
             <span class="" aria-hidden="true">&rarr;</span>
             <span class="sr-only">Next</span>
           </a>
+<script type="text/javascript">
+  document.getElementById("controls-move").addEventListener("click", actionanimation);
+  function actionanimation(){
+    document.getElementById("shake").style.animation="fadeOutLeft";
+  }
+</script>
+
           <script>
             var slideIndex = 1;
             showSlides(slideIndex);

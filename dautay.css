@@ -312,8 +312,7 @@ span.header-main-button-collapse:nth-child(3) {
 
 .img-2-wrap {display: inline-block;height: 71vh;width: auto;}
 
-.container-fluid.header-slide .carousel-inner {
-}
+
 
 .container-fluid.header-slide .row {
     height: 100%;
@@ -328,8 +327,8 @@ span.header-main-button-collapse:nth-child(3) {
 .header-main .slide a[role*="button"] {
     background: black;
     width: 66px;
-    height: 60px;
-    border-radius: 100%;
+    height: 66px;
+    border-radius: 50%;
     top: 39vh;
     opacity: 0;
     transition: all 0.2s linear;
@@ -340,7 +339,7 @@ span.header-main-button-collapse:nth-child(3) {
 }
 
 .header-main .slide a[role*="button"] span {
-    font-size: 27px !important;
+    font-size: 17px !important;
     display: inline-block;
     margin-top: -3px;
 }
@@ -359,7 +358,6 @@ span.header-main-button-collapse:nth-child(3) {
 
 .header-main .header-main-carousel-item:nth-child(1) .slide-content {width: 100%;height: 100%;}
 
-.col-lg-4 {}
 
 .container.out-blog-new-wrap {
     padding: 0;
@@ -726,6 +724,12 @@ ul.forshare li:hover svg {
     margin-top: 60px;
 }
 
+.col-md-6.wow.fadeInUp img {
+    transition: all 0.3s;
+}
+
+.col-md-6.wow.fadeInUp:hover img {transform: scale(1.1);}
+
 .auc-img {
     margin-bottom: 25px;
 }
@@ -804,6 +808,14 @@ h3.auc-title.under-headling {
     margin-bottom: 30px;
     display: flex;
     flex-wrap: nowrap;
+}
+
+.box2-body .row:hover img {
+    transform: scale(1.1);
+}
+
+.box2-body .row img {
+    transition: all 0.3s;
 }
 
 
@@ -1590,7 +1602,7 @@ html{
 
 .inf-oars ul a {
     color: #8a8a94;
-    transition: all 0.3s ease-out;
+    transition: all 0.3s;
 }
 
 .inf-oars ul a:hover {
@@ -1801,8 +1813,7 @@ position: absolute;background: black;width: 100%;height: 100%;left: 0;top: 0;opa
       letter-spacing: 5px;
   }
 
-  .subcribe h4 {
-  }
+ 
   .header-slide .header-main-carousel-item, .container-fluid.header-slide {
     height: 90vh;
 }
@@ -1919,8 +1930,9 @@ position: absolute;background: black;width: 100%;height: 100%;left: 0;top: 0;opa
     -ms-flex-align: center;
     align-items: center;
     width: 100%;
+    /*animation:opacity 1s linear;
+    animation-delay:2s;*/
     
-    transition:all 0.3s linear;
 }
 @-webkit-keyframes opacity {
     from { opacity:0;transform:scale(0.5) }

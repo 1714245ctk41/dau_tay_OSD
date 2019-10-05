@@ -5,7 +5,7 @@ $(function(){
   $('[data-toggle="tooltip"]').tooltip()
  
 
-
+ 
 // Initialize popover component
 
   $('[data-toggle="popover"]').popover()
