@@ -233,7 +233,7 @@ span.header-main-button-collapse:nth-child(3) {
     background: url(images/bg-product-exclusive-.jpg);
 }
 
-.img-2-wrap {position: absolute;top: -6%;left: 400px;}
+.img-2-wrap {position: absolute;top: -155px;left: 490px;}
 
 .header-main .slide-text-container {
     width: 520px;
@@ -244,7 +244,8 @@ span.header-main-button-collapse:nth-child(3) {
 }
 
 .header-main .img-2 img.img-fluid {
-    height: 53vh;
+    max-height: 65vh;
+    max-width: 100vh;
 }
 
 .header-main .img-2 {
@@ -266,7 +267,7 @@ span.header-main-button-collapse:nth-child(3) {
 }
 
 .header-main .slide-button {
-    margin-top: 47px;
+    margin-top: 18px;
     width: 100%;
 }
 
@@ -322,11 +323,11 @@ span.header-main-button-collapse:nth-child(3) {
     height: auto;
     background: transparent;
     position: absolute;
-    top: 23%;
-    left: 29%;
+    top: 37%;
+    left: 22%;
 }
 
-.img-2-wrap {display: inline-block;height: 71vh;width: auto;}
+.img-2-wrap {display: inline-block;height: auto;width: auto;}
 
 
 
@@ -691,7 +692,7 @@ ul.forshare li:hover svg {
     white-space: nowrap;
     font-family: Poppins;
     margin-top: -14px;
-    margin-bottom: 15px;
+    margin-bottom: 9px;
 }
 
 .header-main .slide-text-container h4 {
@@ -1520,11 +1521,16 @@ html{
 }
 
 .contact a {
-    border-radius: 22px;
+    border-radius: 50%;
     background-color: #f5fcf9 !important;
-    padding: 5px 8px;
+    padding: 5px 10px;
     display: inline-block;
     margin-right: 13px;
+    transition: all 0.3s;
+}
+
+.contact a:hover {
+    color: #111111;
 }
 
 .contact li, .follow a, .userfullink a, .contact p {
@@ -2117,6 +2123,13 @@ position: absolute;background: black;width: 100%;height: 100%;left: 0;top: 0;opa
 
 }
 @media screen and (max-width:991px){
+    .header-main .slide a.prev{
+        left: 50px !important;
+        
+    }
+    .header-main .slide a.next{
+        right:50px !important;
+    }
     .header-main .header-head .col-md-12{
         padding-left: 15px !important;
     }
