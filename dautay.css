@@ -29,6 +29,16 @@
   -moz-box-sizing:border-box;
 }
 
+a {}
+
+article.lfp-sub-wrap.wow.fadeInUp {
+    display: grid;
+    grid-template-rows: auto auto;
+    width: 100%;
+    height: 100%;
+    align-content: space-between;
+}
+
 a.navbar-brand {padding-left: 48px;}
 
 .navbar-collapse.collapse{
@@ -55,6 +65,11 @@ a.navbar-brand {padding-left: 48px;}
     border: 1px solid #353535;
     border-radius: 5px;
     line-height: 1;
+}
+
+.collapse-search input:focus {
+    outline: 0px;
+    border-color: #91ac41!important;
 }
 
 input[type="type"] {}
@@ -989,9 +1004,9 @@ article.lfp-sub-wrap:hover {
 }
 
 .fresh-food .lfp-img-box a {
-    display: table-cell;
-    width: 268px;
-    height: 268px;
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
     vertical-align: middle;
 }
 
@@ -1419,6 +1434,10 @@ div#accordionExample {}
 }
 
 .subcribe input:focus {
+    border-color: #91ac41 !important;
+}
+
+.subcribe input:focus {
     border: 1px solid black;
     outline: none;
 }
@@ -1449,7 +1468,7 @@ body{
   overflow-x: hidden;
   font-size: 14px;
 }
-/* overflow-x trong tháº» html Ä‘á»ƒ cháº¡y trÃªn trÃ¬nh duyá»‡t Ä‘iá»‡n thoáº¡i */
+/* overflow-x trong thÃƒÂ¡Ã‚ÂºÃ‚Â» html Ãƒâ€žÃ¢â‚¬ËœÃƒÂ¡Ã‚Â»Ã†â€™ chÃƒÂ¡Ã‚ÂºÃ‚Â¡y trÃƒÆ’Ã‚Âªn trÃƒÆ’Ã‚Â¬nh duyÃƒÂ¡Ã‚Â»Ã¢â‚¬Â¡t Ãƒâ€žÃ¢â‚¬ËœiÃƒÂ¡Ã‚Â»Ã¢â‚¬Â¡n thoÃƒÂ¡Ã‚ÂºÃ‚Â¡i */
 html{
     overflow-x:hidden;
 }
@@ -1640,7 +1659,7 @@ ul{
 .lfp-sub-wrap:hover .product-action-wrap, .lfp-sub-wrap:hover .lfp-sub-img.img-change{
     opacity: 1 !important;
 }
-.fresh-food .lfp-sub-wrap:hover .lfp-sub-img.img-change:after{
+.fresh-food .lfp-sub-wrap:hover .lfp-sub-img.img-main:after{
   opacity: 0;
 }
 .lfp-img-box:hover .lfp-sub-img.img-change{
@@ -1649,10 +1668,23 @@ ul{
 .lfp-img-box:hover .lfp-sub-img.img-change:after{
   opacity:0.3 !important;
 }
-
+.lfp-img-box:hover .lfp-sub-img.img-main:after{
+  opacity:0.3 !important;
+}
 .lfp-sub-img.img-change:after {content: "";
 
 position: absolute;background: black;width: 100%;height: 100%;left: 0;top: 0;opacity: 0;}
+
+.lfp-wrap .lfp-sub-img.img-main:after {
+    content: "";
+    position: absolute;
+    background: black;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
 
 .lfp-sub-img.img-change {
     position: relative ;
@@ -1708,6 +1740,7 @@ position: absolute;background: black;width: 100%;height: 100%;left: 0;top: 0;opa
   position:relative;
   width: 100%;
   background: #f5f6fb;
+  height: 100px;
 }
 
 
