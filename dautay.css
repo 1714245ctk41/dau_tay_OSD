@@ -42,7 +42,6 @@ article.lfp-sub-wrap.wow.fadeInUp {
 a.navbar-brand {padding-left: 48px;}
 
 .navbar-collapse.collapse{
-    margin-left:15px;
 }
 
 .collapse-search {
@@ -91,7 +90,7 @@ button.navbar-toggler-close {
     background: transparent;
     border: 0px solid #ffffff;
     position: absolute;
-    left: 224px;
+    left: 208px;
     top: -24px;
     display: none;
 }
@@ -127,6 +126,7 @@ header-main button.navbar-toggler[aria-expanded="true"] .black-cover-adder {
 
 .header-main nav.navbar.navbar-expand-lg.bg-transparent {
     padding: 0px 20px;
+    width: 100%;
 }
 
 .header-main {
@@ -135,6 +135,7 @@ header-main button.navbar-toggler[aria-expanded="true"] .black-cover-adder {
 
 .obn-slide-wrap div#carouselExampleControls-obn {
     width: 106%;
+    margin-left: -1.5% !important;
 }
 
 .container.out-blog-new-wrap carousel-item {
@@ -994,7 +995,7 @@ h3.auc-title.under-headling {
 }
 
 .row.list-feature-products {
-    width: 101%;
+    width: 104%;
 }
 
 article.lfp-sub-wrap:hover {
@@ -1465,7 +1466,7 @@ body{
   -webkit-font-smoothing:antialiased;
   line-height: 1.6;
   font-weight: 400;
-  overflow-x: hidden;
+  overflow: hidden;
   font-size: 14px;
 }
 /* overflow-x trong thÃƒÂ¡Ã‚ÂºÃ‚Â» html Ãƒâ€žÃ¢â‚¬ËœÃƒÂ¡Ã‚Â»Ã†â€™ chÃƒÂ¡Ã‚ÂºÃ‚Â¡y trÃƒÆ’Ã‚Âªn trÃƒÆ’Ã‚Â¬nh duyÃƒÂ¡Ã‚Â»Ã¢â‚¬Â¡t Ãƒâ€žÃ¢â‚¬ËœiÃƒÂ¡Ã‚Â»Ã¢â‚¬Â¡n thoÃƒÂ¡Ã‚ÂºÃ‚Â¡i */
@@ -1873,10 +1874,16 @@ position: absolute;background: black;width: 100%;height: 100%;left: 0;top: 0;opa
     -moz-box-shadow: 0 3px 7px -3px rgba(0,0,0,.1);
 }
 
-.header-main .col-md-11, .header-main .col-md-12{
+.header-main .col-md-12{
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
+
+.header-main .header-head .col-md-12 {
+    padding: 0px 60px !important;
+}
+
+.header-main .col-md-11 {}
 
 .text{
   font-family:streamster, sans-serif !important;
@@ -2110,6 +2117,9 @@ position: absolute;background: black;width: 100%;height: 100%;left: 0;top: 0;opa
 
 }
 @media screen and (max-width:991px){
+    .header-main .header-head .col-md-12{
+        padding-left: 15px !important;
+    }
     .navbar{
         padding:0px;   
     }
@@ -2123,14 +2133,15 @@ position: absolute;background: black;width: 100%;height: 100%;left: 0;top: 0;opa
 
     }
     a.navbar-brand{
-        width: 197px;
+        width: auto;
         margin-left: auto;
         margin-right: auto;
         text-align: center;
         margin-top: -33px;
         position: absolute;
         top: 53px;
-        left: 40%;
+        left: 43%;
+        padding: 0;
     }
     .header-main button.navbar-toggler{
         margin-top:16px;
